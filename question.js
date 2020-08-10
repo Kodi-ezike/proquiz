@@ -126,7 +126,7 @@ choices.forEach(choice => {
           
         
         selectedChoice.parentElement.classList.add(classToApply);
-        selectedChoice.parentElement.setAttribute('class', 'classToApply');
+       // selectedChoice.parentElement.setAttribute('class', 'classToApply');
 
         setTimeout( () => {
           selectedChoice.parentElement.classList.remove(classToApply);
