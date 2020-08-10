@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+header{
+   height: 58px;
+    background: rgba(26, 92, 190, 0.8);
+    
+}
+.logo{
+    color: white;
+    font-size: 29px;
+    line-height: 58px;
+    margin-left: 20px;
+    font-family: Mulish;
+}
+.container{
+    display: flex;
+}
+#open,#close{
+    display: none;
+}
+.user{
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+}
+#user-icon{
+    font-size: 70px;
+    margin:0 20px;
+    color: #DADADA;
+}
+#username{
+    font-size: 27px;
+    margin-top: 10px;
+}
+#profile{
+    font-size: 18px;
+}
+.menu{
+    width: 25%;
+    background: #4178C9;
+    height: 595px;
+    padding-top: 1rem;
+}
+.menu li{
+    list-style: none;
+    border-top: 1px solid #ededed;
+    padding: 10px 0;
+    margin: 0 20px;
+}
+.menu li a{
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+}
+#topic-link{
+    display: none;
+}
+#topic-link a{
+    font-size: 18px;
+    display: block;
+    margin: 10px 20px;
+}
+#arrow{
+    float: right;
+    margin-right:20px ;
+    margin-top: 5px;
+   
+}
+.text{
+    width: 75%;
+    height:595px;
+    /* text-align: center; */
+    background-image: url(./images/kelli-tungay-2LJ4rqK2qfU-unsplash\ 1.png);
+    background-position: left;
+    background-size: cover;
+}
+.start-btn{
+    text-align: center;
+}
+.start-btn button{
+    outline: 1px solid blue;
+    color: white;
+    width: 600px;
+    position: relative;
+    top: 15rem;
+    height: 100px;
+    margin: auto;
+    background: #4178C9;
+    border: 1px solid #4178C9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Mulish;
+    font-size: 63px;
+    line-height: 74px;
+}
+
+.selection{
+    text-align: center;
+    margin: 5rem 0 2rem 0 ;
+    color: black;
+    padding: 0 10px;
+    font-family: Abhaya Libre;
+    font-size: 32px;
+}
+.choice,.answer-choice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.level-choice{
+    display: flex;
+    flex-direction: column;
+}
+.level-choice a{
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+.choice a,.level-choice a,.answer-choice p{
+    width: 370px;
+    height: 56px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border: 3px solid #2F80ED;
+    margin-bottom: 20px;
+    font-family: Mulish;
+    font-size: 20px;
+    line-height: 50px;
+}
+.answer-choice p{
+    background: none;
+}
+
+.choice a:hover,.level-choice a:hover{
+border: 3px solid #14F00F;
+}
+#hud{
+    display: flex;
+    justify-content: space-between;
+    color: #2F80ED;
+    padding: 10px 20px;
+}
+.hud-prefix{
+    font-size: 2rem;
+    text-align: center;
+}
+.hud-main-text{
+    text-align: center;
+    font-size: 3rem;
+}
+.choice-prefix{
+    width: 370px;
+    height: 53px;
+    margin-bottom: 20px;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+
+#overall{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1A5CBE;
+    padding: 0 10px;
+}
+#complete{
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+#feedback{
+    font-size: 24px;
+    margin-bottom: 2rem;
+line-height: 33px;
+text-align: center;
+padding: 0 10px;
+}
+#try-btn{
+    text-align: center;
+}
+#try-btn button{
+    width: 400px;
+    height: 50px;
+    font-family: Roboto;
+    border: 1px solid #4178C9;
+    outline: 1px solid blue;
+    color: white;
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 5rem;
+    background: #4178C9;
+}
+@media screen and (max-width: 770px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .open{
+        position: absolute;
+        z-index: 1;
+        margin-top: 1rem;
+        font-size: 25px;
+        margin-left: 20px;
+        color: rgb(236, 213, 213);
+    
+    }
+    .close{
+        margin-top: auto;
+        margin-top: 1rem;
+        margin-left: 260px;
+        z-index: 1;
+        position: absolute;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+    
+    #open{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        background: #4178C9;
+        padding-bottom: 0;
+        padding-top: 3rem;
+    }
+    .text{
+        width: 100%;
+        position: relative;
+    }
+    #links{
+        display: none;
+    }
+    .start-btn button{
+        width: 200px;
+        top: 7rem;
+        height: 50px;
+        margin: auto;
+        font-size: 30px;
+        line-height: 20px;
+    }
+    #try-btn button{
+        width: 300px;
+    }
+    .choice a,.level-choice a{
+        width: 300px;
+    }
+}

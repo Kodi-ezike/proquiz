@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProQuiz</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0bb1150f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p class="logo">ProQuiz</p>
+    </header>
+    <div  class="container">
+       
+       
+          
+            <div class="menu" id="links">
+                <div class="user">
+                    <i class="far fa-user-circle" id="user-icon"></i>
+                    <div>
+                        <p id='username'>Oluwatosin</p>
+                        <p id="profile">View Profile</p>
+                    </div>
+                </div>
+            
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" id="topics" onclick="topic()"><i class="far fa-comment"></i> Topics<i id="arrow" class="fas fa-angle-double-right"></i></a></li>
+                <li id="topic-link">
+                    <a href="">General Knowledge</a>
+                    <a href="">Entertainment: Film</a>
+                    <a href="">Entertainment: Music</a>
+                    <a href="">Science and Nature</a>
+                    <a href="">Science: Computers</a>
+                    <a href="">Science: Maths</a>
+                    <a href="">Sports</a>
+                    <a href="">Geography</a>
+                    <a href="">Politics</a>
+                    <a href="">Arts</a>
+                </li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+                
+            </div>
+            <!-- <a href="" id="open" class="open" onclick="openNav()"><i class="fas fa-bars"></i></a>
+            <a href="" id="close" class="close" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" ><path fill="whitesmoke" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"/></svg>
+            </a>  -->
+            <a onclick="closeNav()" id="close" href="javascript:;"><img src="images/icon-close.svg" alt="Img" class="close"> </a>
+            <a onclick="openNav()" id="open" href="javascript:;"><img src="images/icon-hamburger.svg" alt="Img" class="open"> </a>
+            <div id="main-page"  class="text">
+                <p class="selection">GENERAL KNOWLEDGE</p>
+                <p class="selection">SELECT LEVEL OF DIFFICULTY</p>
+                <div class="level-choice">
+                    
+                    <a href="">EASY</a>
+                    <a href="">MEDIUM</a>
+                    <a href="">HARD</a>
+                </div>
+             </div>
+        
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
