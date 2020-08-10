@@ -13,8 +13,8 @@ function topic(){
     else {
         topicLink.style.display = "block";
         topicArrow.style.transform = 'rotate(90deg)';
-        home.style.height = '720px';
-        main.style.height = '720px';
+        home.style.height = '900px';
+        main.style.height = '900px';
        
     }
 };
